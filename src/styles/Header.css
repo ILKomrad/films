@@ -1,0 +1,33 @@
+.header-form {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.header-form__search {
+    display: flex;
+    justify-content: space-around;
+}  
+
+.form-check-input {
+    margin-left: 0;
+    left: 0;
+}
+
+.form-check-label {
+    padding-left: 20px;
+    position: relative;
+}
+
+.form-check {
+    margin-bottom: 20px;
+}
+
+.header-form__search input {
+    border-radius: 5px 0 0 5px;
+}
+
+.header-form__search button {
+    border-radius: 0 5px 5px 0;
+} 

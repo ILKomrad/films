@@ -1,0 +1,22 @@
+.film__char {
+    text-align: left;
+}
+
+.film {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.film:first-child {
+    margin-top: 0;
+}
+
+.film__delete {
+    margin-top: 20px;
+}
+
+dl, ol, ul {
+    margin-bottom: 0;
+}

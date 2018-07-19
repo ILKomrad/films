@@ -1,0 +1,35 @@
+export default function films(state = [], action) {
+    switch (action.type) {
+        case 'getFilms': 
+            return action.films;
+        
+        case 'importFilms':
+            return action.films;
+        
+        case 'addFilm':
+            const film = action.film;
+            return Object.assign({}, state, {
+                films: [
+                    ...state.films,
+                    {
+                        id: action.id,
+                        'Title' : film['Title'],
+                        'Release Year' : film['Release Year'],
+                        'Format' : film['Format'],
+                        'Stars' : film['Stars'],
+                    }
+                ]
+            })
+        
+        case 'deleteFilm':
+            const index = state.films.findIndex(f => f.id === action.id);
+            const films = [
+                ...state.films.slice(0, index),
+                ...state.films.slice(index + 1)
+            ];
+            return Object.assign({}, state, {films});
+            
+        default:
+            return state;
+    }
+}
