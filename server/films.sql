@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Июл 19 2018 г., 05:54
+-- Время создания: Июл 20 2018 г., 09:56
 -- Версия сервера: 5.6.38
 -- Версия PHP: 7.2.1
 
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `films` (
   `id` int(11) UNSIGNED NOT NULL,
   `title` text NOT NULL,
-  `year` int(11) NOT NULL,
+  `release year` int(11) NOT NULL,
   `format` text NOT NULL,
   `stars` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;

@@ -25,10 +25,10 @@ app.post('/addItem', function(req, res) {
     var item = req.body.item;
 
     db.addToDb('films', {
-        Title: item['Title'],
-        'Release Year': item['Release Year'],
-        Format: item['Format'],
-        Stars: item['Stars']
+        title: item['title'],
+        'release Year': item['release year'],
+        format: item['format'],
+        stars: item['stars']
     }, function(err, data) {
         res.json({
             id: data.insertId
@@ -58,10 +58,10 @@ app.post('/uploadFile', function(req, res) {
             arr.forEach(function(item) {
                 if (item['Title']) {
                     db.addToDb('films', {
-                        Title: item['Title'].trim(),
-                        'Release Year': item['Release Year'].trim(),
-                        Format: item['Format'].trim(),
-                        Stars: item['Stars'].trim()
+                        title: item['Title'].trim(),
+                        'release year': item['Release Year'].trim(),
+                        format: item['Format'].trim(),
+                        stars: item['Stars'].trim()
                     });
                 }
             });

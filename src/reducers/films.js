@@ -13,10 +13,10 @@ export default function films(state = [], action) {
                     ...state.films,
                     {
                         id: action.id,
-                        'Title' : film['Title'],
-                        'Release Year' : film['Release Year'],
-                        'Format' : film['Format'],
-                        'Stars' : film['Stars'],
+                        'title' : film['title'],
+                        'release year' : film['release Year'],
+                        'format' : film['format'],
+                        'stars' : film['stars'],
                     }
                 ]
             })

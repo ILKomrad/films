@@ -26,7 +26,7 @@ class Films extends Component {
     }
 
     handleChange(e) {
-        if (e.target.name == 'file') {
+        if (e.target.name === 'file') {
             let data = new FormData();
             data.append('file', e.target.files[0]);
             this.props.onImport(data);

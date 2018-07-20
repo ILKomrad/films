@@ -1,17 +1,16 @@
 import { connect } from 'react-redux';
 import Films from '../components/Films';
-import React from 'react';
 import { addFilm, deleteFilm, importFilms, setOrder } from '../actions';
 
 function orderByTitle(todos, order) {
     if (todos) {
         if (order === 'a-z') {
             todos.sort((a, b) => {
-                return (a['Title'].trim().toLowerCase() > b['Title'].trim().toLowerCase()) ? 1 : -1;
+                return (a['title'].trim().toLowerCase() > b['title'].trim().toLowerCase()) ? 1 : -1;
             })   
         } else if (order === 'z-a') {
             todos.sort((a, b) => {
-                return (a['Title'].trim().toLowerCase() > b['Title'].trim().toLowerCase()) ? -1 : 1;
+                return (a['title'].trim().toLowerCase() > b['title'].trim().toLowerCase()) ? -1 : 1;
             })
         }
     }

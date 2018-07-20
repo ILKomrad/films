@@ -1,13 +1,6 @@
 import { connect } from 'react-redux';
 import Header from '../components/Header';
-import React from 'react';
-import { importFilms, onSearch } from '../actions';
-
-function mapStateToProps(state) {
-    return {
-        films: state.films.films
-    }
-}
+import { onSearch } from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -15,5 +8,5 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-const HeaderContainer = connect(mapStateToProps, mapDispatchToProps)(Header);
+const HeaderContainer = connect(null, mapDispatchToProps)(Header);
 export default HeaderContainer;

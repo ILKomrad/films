@@ -36,10 +36,10 @@ class AddFilm extends Component {
         e.preventDefault();
 
         this.props.onAdd({
-            'Title': this.state.title,
-            'Release Year': this.state.year,
-            'Format': this.state.format,
-            'Stars': this.state.stars
+            'title': this.state.title,
+            'release year': this.state.year,
+            'format': this.state.format,
+            'stars': this.state.stars
         });
         this.form.current.reset();
         this.setState({
